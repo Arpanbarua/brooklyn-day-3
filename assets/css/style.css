@@ -1,0 +1,895 @@
+:root {
+	--gray-white: #fff;
+	--gray-50: #f0f1f3;
+	--gray-100: #e6e8eb;
+	--gray-200: #c3c7ce;
+	--gray-300: #a5acb5;
+	--gray-400: #87909d;
+	--gray-500: #697484;
+	--gray-600: #556070;
+	--gray-700: #424e60;
+	--gray-800: #2b384c;
+	--gray-900: #132238;
+	--primary-100: #edd8ff;
+	--primary-200: #dbb1ff;
+	--primary-300: #c98bff;
+	--primary-400: #b764ff;
+	--primary-500: #a53dff;
+	--primary-600: #8431cc;
+	--primary-700: #632599;
+	--primary-800: #421866;
+	--primary-900: #210c33;
+    --font-family: "Work Sans", sans-serif;
+    --second-family: "Poppins", sans-serif;
+    --third-family: "Public Sans", sans-serif;
+}
+
+/*-------- nav css start ----------*/
+
+#nav 
+{
+    box-shadow: 3px 3px 10px var(--gray-100);
+}
+
+#nav .logo:hover
+{
+    /* transform: scaleX(-1); */
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+.navbar 
+{
+    padding: 20px 0;
+    background-color: var(--gray-white);
+}
+
+#nav ul li a 
+{
+    padding: 12px 24px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333;
+    position: relative;
+}
+
+#nav ul li a::before 
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 0%;
+    background: #000;
+    visibility: hidden;
+    transition: 2s;
+}
+
+#nav ul li a:hover::before 
+{
+    visibility: visible;
+    width: 100%;
+
+}
+
+#nav .contact 
+{
+    text-decoration: none;
+    background: var(--primary-500);
+    border-radius: 4px;
+padding: 12px 24px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--gray-white);
+margin-left: 15px;
+display: inline-block;
+}
+
+#nav .contact:hover 
+{
+    outline: 1px solid var(--primary-500);
+    background: #fff;
+    color: #132238;
+}
+
+/*-------- nav css end ----------*/
+
+/*-------- banner css start ----------*/
+
+#banner 
+{
+    padding: 50px 0 120px 0 ;
+    margin: 50px 0 650px 0;
+}
+
+#banner .contains>h4 
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 117%;
+    color: var(--gray-900);
+}
+
+#banner .contains>p 
+{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--gray-600);
+    margin: 24px 0;
+    text-align: justify;
+}
+
+#banner .contains>p .uxui 
+{
+    color: var(--gray-900);
+}
+
+#banner .contains>p .developer 
+{
+    color: var(--gray-900);
+}
+
+#banner .contains> a
+{
+    background: var(--primary-500);
+    border-radius: 4px;
+padding: 12px 24px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--gray-white);
+display: inline-block;
+text-decoration: none;
+}
+
+#banner .contains> a:hover 
+{
+    outline: 1px solid var(--primary-500);
+    background-color: var(--gray-50);
+    color: var(--gray-900);
+}
+
+#banner .contains .row 
+{
+    margin-top: 100px;
+    
+}
+
+#banner .card-box
+{
+    background: rgba(237, 216, 255, 0.5);
+    border: 1px solid var(--gray-white);
+border-radius: 6px;
+margin: 5px;
+width: calc(33% - 10px);
+}
+
+#banner .card-box:hover 
+{
+    background: rgba(230, 216, 255, 0.9); 
+    transform: scaleY(1.05);
+    transform-origin: bottom;
+}
+
+#banner .card-box .details
+{
+    padding: 17px 12px;
+}
+
+#banner .card-box .details h4 
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    color: var(--gray-700);
+    margin-bottom: 8px;
+}
+
+#banner .card-box .details p 
+{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-500);
+}
+
+
+/*-------- banner css end ----------*/
+
+/*-------- about css start ----------*/
+#about 
+{
+    background: #fff;
+    
+}
+
+#about .container 
+{
+    box-shadow: 0 36px 105px 0 rgba(43, 56, 76, 0.1);
+background: var(--gray-white);
+border-radius: 16px;
+padding: 112px;
+position: absolute;
+top: 920px;
+left: 100px;
+z-index: 3;
+
+}
+
+#about .contains h4
+{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 38px;
+line-height: 132%;
+color: var(--gray-900);
+margin-bottom: 32px;
+}
+
+#about .contains p 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+color: var(--gray-600);
+}
+
+#about .contains .design 
+{
+    margin-bottom: 32px;
+}
+
+#about .contains a 
+{
+    background: var(--primary-500);
+    border-radius: 4px;
+padding: 12px 24px; 
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--gray-white);
+text-decoration: none;
+display: inline-block;
+}
+
+#about .contains a:hover 
+{
+    background: #fff;
+    color: var(--gray-600);
+    outline: 1px solid var(--primary-500);
+}
+
+#about .contains .download
+{
+    background: var(--gray-white);
+    outline: 1px solid var(--primary-500);
+padding: 12px 24px;
+margin-left: 16px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--primary-500);
+display: inline-flex;
+
+}
+
+#about .contains .download:hover 
+{
+    background: var(--primary-300);
+    color: var(--gray-white);
+    outline: 1px solid var(--gray-500); 
+}
+
+
+#about .contains .download span 
+{
+    display: inline-flex;
+    line-height: 0;
+    align-items: center;
+}
+
+#about .img
+{
+    position: relative;
+}
+
+#about .img .icons
+{
+    box-shadow: 0 12px 64px 0 rgba(28, 25, 25, 0.12);
+background: var(--gray-white);
+border-radius: 4px;
+padding: 15px;
+display: inline-flex;
+position: absolute;
+left: 74px;
+bottom: -42px;
+}
+
+#about .img .icons a
+{
+    padding: 15px;
+    color: var(--primary-500);
+    background: var(--gray-white);
+    display: inline-flex;
+    line-height: 0;
+    align-items: center;
+} 
+
+#about .img .icons a:hover 
+{
+    box-shadow: 0 12px 64px 0 rgba(28, 25, 25, 0.12);
+background: var(--primary-500);
+color: var(--gray-white);
+border-radius: 4px;
+padding: 15px;
+transform: scale(1.05);
+transform-origin: bottom;
+
+}
+
+
+/*-------- about css end ----------*/
+
+/*-------- work css start ----------*/
+#work
+{
+    background: var(--gray-50);
+   position: relative;
+   padding-bottom: 140px;
+}
+
+#work .contains h4 
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    color: var(--gray-900);
+}
+
+#work .contains p
+{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--gray-500);
+    
+}
+
+#work .contains p:first-of-type
+{
+    margin: 24px 0 16px 0;
+}
+
+#work .row 
+{
+    padding-top: 248px ;
+
+}
+
+#work .col-xl-6 .row 
+{
+    padding-top: 0;
+}
+
+#work .card-box img 
+{
+    background: rgba(237, 216, 255, 0.5);
+    border-radius: 6px;
+    margin-bottom: 32px;
+}
+
+#work .card-box p 
+{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-600);
+    margin-bottom: 0;
+    
+}
+
+#work .card-box h4
+{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+color: var(--gray-900);
+margin-bottom: 12px;
+}
+
+#work .card-box 
+{
+    margin: 12px;
+    width: calc(50% - 24px);
+    background: var(--gray-white);
+    padding: 32px;
+    border-radius: 12px;
+}
+
+#work .card-box:hover
+{
+    box-shadow: 32px 32px 124px 0 rgba(43, 56, 76, 0.1);
+background: var(--gray-white);
+}
+
+
+
+
+#work .card-box img 
+{
+    /* background-color: var(--primary-500); */
+    background: rgba(237, 216, 255, 0.5);
+    padding: 25px;
+    border-radius: 6px;
+    
+}
+
+#work .card-box img:hover 
+{
+    background-color: var(--primary-100);
+      
+}
+
+#work .card-box .research:hover 
+{
+    background-color: var(--primary-500);
+    color: white;   
+}
+
+
+
+#work .card-box:nth-child(1) 
+{
+ 
+   position: relative;
+   top: -35px;
+  
+ 
+   
+}
+
+#work .card-box:nth-child(3)
+{
+  
+   position: relative;
+   top: -35px;
+}
+
+/*-------- work css end ----------*/
+
+/*-------- portfolio css start ----------*/
+#portfolio 
+{
+    padding: 100px 0;
+    
+}
+
+#portfolio .contains
+{
+    margin-bottom: 70px;
+}
+
+#portfolio .contains p 
+{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--gray-400);
+    width: 45%;
+    margin: auto;
+} 
+#portfolio .contains h4 
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    color: var(--gray-900);
+    text-align: center;
+} 
+
+#portfolio .card-section .card-box h5:first-of-type 
+{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    color: var(--gray-400);
+    margin: 0;
+}
+
+#portfolio .card-section .card-box p
+{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--gray-600);
+    margin-bottom: 20px;
+}
+#portfolio .card-section .card-box h5
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--gray-900);
+    margin: 4px 0 12px 0;
+}
+
+#portfolio .card-section .card-box .card-body 
+{
+    padding: 32px;
+}
+
+#portfolio .card-section .card-box a
+{
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--primary-500);
+background: var(--gray-white);
+border: 1px solid var(--primary-500);
+border-radius: 4px;
+display: inline-block;
+}
+
+#portfolio .card-section .card-box a:hover 
+{
+    color: var(--gray-white);
+    background-color: var(--primary-500);
+}
+
+#portfolio .card-section .card-box
+{
+    background: var(--gray-white);
+    outline: 1px solid var(--gray-100);
+border-radius: 8px;
+padding: 0;
+margin: 12px;
+width: calc(33.33% - 24px);
+}
+
+#portfolio .card-section .card-box:hover 
+{
+    box-shadow: 0 12px 64px 0 rgba(28, 25, 25, 0.12);
+}
+
+#portfolio .more a
+{
+    background: var(--primary-500);
+    border-radius: 4px;
+padding: 12px 24px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--gray-white);
+text-decoration: none;
+display: inline-block;
+text-align: center;
+}
+
+#portfolio .more a:hover 
+{
+    color:#000; 
+    background: var(--gray-white);
+    outline: 1px solid var(--primary-500);
+    
+}
+
+#portfolio .more
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*-------- portfolio css end ----------*/
+
+/*-------- idea css start ----------*/
+
+#idea {
+    background: var(--gray-900);
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+
+#idea .contains h4 
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    text-align: center;
+    color: var(--gray-white);  
+    width: 50%;
+    margin: auto;
+}
+
+#idea .contains p
+{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--gray-300);
+    padding: 32px 0;
+    width: 45%;
+    margin: auto;
+}
+
+#idea .contains a 
+{
+    background: var(--primary-500);
+    border-radius: 4px;
+padding: 12px 24px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--gray-white);
+text-decoration: none;
+display: inline-block;
+}
+
+#idea .contains a:hover 
+{
+    background: var(--gray-white);
+    color: var(--gray-900);
+    outline: 1px solid var(--primary-500); 
+}
+
+/*-------- idea css end ----------*/
+
+/*-------- blog css start ----------*/
+#blog 
+{
+    padding: 100px 0;
+    background: linear-gradient(to right, #FAE6FD, #fff , #F4FDFB );
+}
+
+#blog .contains
+{
+    margin-bottom: 70px;
+}
+
+#blog .contains p 
+{
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    text-align: center;
+    color: var(--gray-400);
+    width: 45%;
+    margin: auto;
+}
+
+#blog .contains h4 
+{
+    font-family: var(--second-family);
+font-weight: 600;
+font-size: 48px;
+line-height: 117%;
+color: var(--gray-900);
+margin-bottom: 24px;
+text-align: center;
+
+}
+
+#blog .card-box .card-body
+{
+    padding: 24px;
+}
+
+#blog .card-box
+{
+    margin: 12px;
+    width: calc(25% - 24px);
+    outline: 1px solid var(--gray-50);
+border-radius: 8px;
+background: var(--gray-white);
+padding: 0;
+}
+
+#blog .card-box:hover 
+{
+    box-shadow: 0 12px 64px 0 rgba(28, 25, 25, 0.12);
+}
+
+
+#blog .card-box .card-body h4 
+{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #333;
+    margin-top: 8px;
+}
+
+#blog .card-box .card-body h5 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: var(--gray-400);
+
+}
+
+/*-------- blog css end ----------*/
+
+/*-------- do css start ----------*/
+
+#do {
+    padding: 150px 0;
+    background: var(--gray-50);
+}
+
+#do .contains h4 
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+#do .contains p 
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+color: var(--gray-400);
+}
+
+#do .contains p:last-of-type 
+{
+    margin: 16px 0 50px 0;
+}
+
+#do .contains a 
+{
+    border-radius: 4px;
+padding: 12px 24px;
+background: var(--primary-500);
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--gray-white);
+text-decoration: none;
+display: inline-block;
+
+}
+
+#do .contains a:hover 
+{
+    background: var(--gray-white);
+    color: var(--gray-900);
+    outline: 1px solid var(--primary-500); 
+}
+
+#do .card-box 
+{
+    padding: 32px;
+    background: var(--gray-white);
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+
+#do .card-box:hover 
+{
+    box-shadow: 0 32px 96px 0 rgba(28, 25, 25, 0.16);
+    border-left: 5px solid var(--primary-500) ;
+}
+
+#do .card-box:last-child
+{
+    margin-bottom: 0;
+}
+
+#do .card-box p
+{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-700);
+    margin-bottom: 0;
+}
+
+#do .card-box h4
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--gray-900);
+    margin-bottom: 16px;
+}
+
+
+/*-------- do css end ----------*/
+
+/*-------- do css start ----------*/
+
+#clients 
+{
+    padding: 100px 0;
+}
+
+#clients .contains
+{
+    margin-bottom: 24px;
+}
+
+#clients .contains h4 
+{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    text-align: center;
+    color: var(--gray-900);
+    margin-bottom: 24px;
+}
+
+#clients .contains p
+{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+text-align: center;
+color: var(--gray-400);
+    width: 45%;
+    margin: auto;
+}
+
+/* #clients .d-flex img 
+{
+    display: inline-block;
+}
+
+#clients .d-flex img:hover 
+{
+    cursor: pointer;
+} */
+
+
+
+/*-------- do css end ----------*/
+
